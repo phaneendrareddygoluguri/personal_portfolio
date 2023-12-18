@@ -17,6 +17,7 @@ function HomeIndex() {
   const { Image6, Image8, Image9, projectImg1, phanee } = React.Imports(
     ({ assets }) => assets
   );
+  const { yearsAndMonthsCompleted } = React.Imports(({ utils }) => utils);
   // const {
   //   SignalWifi0BarIcon,
   //   ShareOutlinedIcon,
@@ -98,14 +99,6 @@ function HomeIndex() {
               years. Expertise is to create and web design,Frontend design and
               many more....
             </p>
-            <button
-              className="getStartedButton"
-              onClick={() => {
-                navigate("/about");
-              }}
-            >
-              Know Me
-            </button>
           </Grid>
           <Grid
             item
@@ -126,6 +119,14 @@ function HomeIndex() {
               <img src={phanee} alt="girlImage" className="profileImage" />
             </div>
           </Grid>
+          <button
+            className="getStartedButton"
+            onClick={() => {
+              navigate("/about");
+            }}
+          >
+            Know Me
+          </button>
         </Grid>
         <Grid container className="getInTouchContainer">
           <h2 className="action-head">Call to Action</h2>
@@ -203,20 +204,20 @@ function HomeIndex() {
               <img src={Image8} width={"80%"} alt="img" className="about-img" />
             </div>
             <p>
-              • 2.1 years of work experience as a React JS (JavaScript library)
-              Web Developer. • Developed reusable components using the React JS
-              library for the user interface. • Exposed to working with the
-              latest react hooks functional programming. • Strong hands-on
-              experience with Forms, and data tables. • Experience with Formik,
-              Yup, Material UI. • Integrated Redux store management to drill
-              down API response throughout all the reusable components. • Worked
-              with the promise-based HTTP client Axios and Fetch to interface
-              the resources from API (Application Programming Interface). •
-              Involved in requirement analysis, design and development. •
-              Experience in using GIT for code repository and as version control
-              mechanism. • Ability to be creative and take self-initiatives to
-              manage multiple projects in parallel during critical situations. .
-              Ability to work independently and with a team.............
+              {`•${yearsAndMonthsCompleted()} of work experience as a React JS (JavaScript library) Web Developer. • Developed reusable
+              components using the React JS library for the user interface. •
+              Exposed to working with the latest react hooks functional
+              programming. • Strong hands-on experience with Forms, and data
+              tables. • Experience with Formik, Yup, Material UI. • Integrated
+              Redux store management to drill down API response throughout all
+              the reusable components. • Worked with the promise-based HTTP
+              client Axios and Fetch to interface the resources from API
+              (Application Programming Interface). • Involved in requirement
+              analysis, design and development. • Experience in using GIT for
+              code repository and as version control mechanism. • Ability to be
+              creative and take self-initiatives to manage multiple projects in
+              parallel during critical situations. . Ability to work
+              independently and with a team.............`}
             </p>
             <button
               className="learnButton"

@@ -6,9 +6,7 @@ import WhyChoosingMe from "../../Reusable/WhyChoosingMe";
 import ExperienceCard from "../../Reusable/ExperienceCard";
 import IconLogo from "../../components/layout/iconLogo";
 import MenuDrawer from "../../components/layout/menuDrawer";
-
 import SkillsIndex from "../../components/skills";
-
 import HomeIndex from "../../components/home";
 import ActionCall from "../../components/home/actionCall";
 import AboutIndex from "../../components/about";
@@ -20,11 +18,10 @@ import AboutCard from "../../components/about/AboutCard";
 import AboutExperienceCard from "../../components/about/AboutExperienceCard";
 import AboutSkill from "../../components/about/AboutSkills";
 import AboutRoles from "../../components/about/AboutRole";
-
 import ProjectMetaInfo from "../../components/project/projectMetaInfo";
-
 import Routes from "../../Routes";
 import Layout from "../../components/layout/";
+import yearsAndMonthsCompleted from "../../Reusable/YearsAndMonthsCompleted";
 
 export const utils = {
   Button,
@@ -42,6 +39,7 @@ export const utils = {
   AboutSkill,
   AboutRoles,
   ProjectMetaInfo,
+  yearsAndMonthsCompleted,
 };
 
 export const screens = {
