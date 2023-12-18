@@ -14,6 +14,10 @@ import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Chip from "@mui/material/Chip";
 import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
 
 import ReactECharts from "echarts-for-react";
 
@@ -34,9 +38,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import RedditIcon from "@mui/icons-material/Reddit";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import SignalWifi0BarIcon from '@mui/icons-material/SignalWifi0Bar';
-import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
-import FastForwardOutlinedIcon from '@mui/icons-material/FastForwardOutlined';
+import SignalWifi0BarIcon from "@mui/icons-material/SignalWifi0Bar";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import FastForwardOutlinedIcon from "@mui/icons-material/FastForwardOutlined";
 import DonutChart from "react-donut-chart";
 
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
@@ -47,13 +51,13 @@ import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import GroupIcon from "@mui/icons-material/Group";
 import Container from "@mui/material/Container";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Popover from '@mui/material/Popover';
-import EmailIcon from '@mui/icons-material/Email';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import SouthIcon from '@mui/icons-material/South';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Popover from "@mui/material/Popover";
+import EmailIcon from "@mui/icons-material/Email";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import SouthIcon from "@mui/icons-material/South";
 export const materialUI = {
   AppBar,
   Box,
@@ -79,6 +83,10 @@ export const materialUI = {
   EmailIcon,
   WhatsAppIcon,
   SouthIcon,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemAvatar,
 };
 
 export const icons = {
@@ -109,11 +117,9 @@ export const icons = {
   AccessTimeOutlinedIcon,
   CheckCircleOutlineIcon,
   GroupIcon,
-
 };
 
 export const ECharts = {
   ReactECharts,
   DonutChart,
 };
-

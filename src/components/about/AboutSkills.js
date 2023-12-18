@@ -6,7 +6,7 @@ const AboutSkill = () => {
   const React = document.React;
   // const { AboutSkillCard } = React.Imports(({ constants }) => constants);
   // const { ABOUT_Skill_CARD } = AboutSkillCard();
-  const { Grid,  } = React.Imports(({ materialUI }) => materialUI);
+  const { Grid } = React.Imports(({ materialUI }) => materialUI);
   // const { AboutExpCard } = React.Imports(({ constants }) => constants);
   // const { ABOUT_DESCRIPTION_CARD } = AboutExpCard();
   return (
@@ -36,12 +36,10 @@ const AboutSkill = () => {
         </div>
       </Grid>
       <Grid items xs={12} md={6} className="educationContainerLeft">
-        <p>Small look at to my skills</p>
+        <p>Small look at my skills</p>
         <img src={Skills} alt={"img"} />
       </Grid>
     </Grid>
   );
 };
 export default AboutSkill;
-
-

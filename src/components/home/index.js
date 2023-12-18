@@ -1,22 +1,30 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 function HomeIndex() {
-  const {
-    Grid,
-    // Box,
-    Card,
-    CardContent,
-    CardMedia,
-    // Typography,
-    // Popover,
-    // EmailIcon,
-    // WhatsAppIcon,
-    // IconButton,
-    // SouthIcon,
-  } = React.Imports(({ materialUI }) => materialUI);
-  const { Image6, Image8, Image9, projectImg1, phanee } = React.Imports(
-    ({ assets }) => assets
+  const { Grid, Card, CardContent, CardMedia, Box } = React.Imports(
+    ({ materialUI }) => materialUI
   );
+  const {
+    Image6,
+    Image8,
+    Image9,
+    projectImg1,
+    phanee,
+    jsicon,
+    reactlogo,
+    htmlicon,
+    nodejsicon,
+    muiicon,
+    giticon,
+    githubicon,
+    formikicon,
+    yupicon,
+    reduxtoolkit,
+    typescripticon,
+    cssicon,
+    bitbucketicon,
+    axiosicon,
+  } = React.Imports(({ assets }) => assets);
   const { yearsAndMonthsCompleted } = React.Imports(({ utils }) => utils);
   // const {
   //   SignalWifi0BarIcon,
@@ -63,24 +71,74 @@ function HomeIndex() {
 
   const skills = [
     {
-      language: "javaScript",
-      experience: "2YR",
+      language: "JavaScript",
+      experience: yearsAndMonthsCompleted(),
+      icon: jsicon,
     },
     {
-      language: "HTML5",
-      experience: "2.4YR",
+      language: "HTML",
+      experience: yearsAndMonthsCompleted(),
+      icon: htmlicon,
     },
     {
       language: "ReactJS",
-      experience: "1.8YR",
+      experience: yearsAndMonthsCompleted(),
+      icon: reactlogo,
     },
     {
-      language: "CSS3",
-      experience: "2YR",
+      language: "CSS",
+      experience: yearsAndMonthsCompleted(),
+      icon: cssicon,
+    },
+    {
+      language: "Redux Toolkit",
+      experience: yearsAndMonthsCompleted(),
+      icon: reduxtoolkit,
+    },
+    {
+      language: "Git",
+      experience: yearsAndMonthsCompleted(),
+      icon: giticon,
+    },
+    {
+      language: "GitHub",
+      experience: yearsAndMonthsCompleted(),
+      icon: githubicon,
+    },
+    {
+      language: "TypeScript",
+      experience: yearsAndMonthsCompleted(),
+      icon: typescripticon,
+    },
+    {
+      language: "Formik",
+      experience: yearsAndMonthsCompleted(),
+      icon: formikicon,
+    },
+    {
+      language: "Yup",
+      experience: yearsAndMonthsCompleted(),
+      icon: yupicon,
+    },
+    {
+      language: "Axios",
+      experience: yearsAndMonthsCompleted(),
+      icon: axiosicon,
+    },
+    {
+      language: "BitBucket",
+      experience: yearsAndMonthsCompleted(),
+      icon: bitbucketicon,
+    },
+    {
+      language: "Material-UI",
+      experience: yearsAndMonthsCompleted(),
+      icon: muiicon,
     },
     {
       language: "Node.JS",
       experience: "0.6YR",
+      icon: nodejsicon,
     },
   ];
   const open = Boolean(anchorEl);
@@ -91,11 +149,10 @@ function HomeIndex() {
         <Grid container>
           <Grid item xs={12} md={6} className={"homeMainContainer"}>
             <h3>
-              Hello, it's Me I'm Phaneendra Reddy Goluguri And I'm a Frontend
-              Developer{" "}
+              Hello,I'm Phaneendra Reddy Goluguri And I'm a Front-End Developer{" "}
             </h3>
             <p>
-              I'm a Frontend Developer with extensive experince for over 2
+              I'm a Front-End Developer with extensive experince for over 2
               years. Expertise is to create and web design,Frontend design and
               many more....
             </p>
@@ -200,7 +257,7 @@ function HomeIndex() {
         <Grid container>
           <Grid item xs={12} md={6} className="aboutUSContainer">
             <div className="aboutContent">
-              <h3>About us</h3>
+              <h3>About</h3>
               <img src={Image8} width={"80%"} alt="img" className="about-img" />
             </div>
             <p>
@@ -261,22 +318,35 @@ function HomeIndex() {
           </Grid>
         </Grid>
         <Grid container className="skillsContainer">
-          <h1>My Skills</h1>
+          <h1>Skills</h1>
           <Grid container className="donut">
             <Grid item xs={12} md={6} className="donut-chart">
               <ReactECharts option={DONUT_OPTIONS} />
             </Grid>
             <Grid item xs={12} md={6} className="donut-names" pl={4}>
-              <div>
-                {skills?.map((each) => {
-                  return (
-                    <div className="skillsNameContainer">
-                      <p>{each?.language}</p>
-                      <p className="exp">{each?.experience}</p>
-                    </div>
-                  );
-                })}
-              </div>
+              {skills?.map((each) => {
+                return (
+                  <div className="skillsNameContainer">
+                    <Box>
+                      <span>
+                        {" "}
+                        <img
+                          src={each?.icon}
+                          alt={each?.language}
+                          width={30}
+                          style={{ borderRadius: "25px" }}
+                        />
+                      </span>
+                      <span>
+                        <div className="infoTextExpContent">
+                          <h4>{each?.language}</h4>
+                          <p>{each?.experience}</p>
+                        </div>
+                      </span>
+                    </Box>
+                  </div>
+                );
+              })}
             </Grid>
           </Grid>
         </Grid>

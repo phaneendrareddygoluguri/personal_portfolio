@@ -32,6 +32,20 @@ import Mic from "../../components/assets/mic.png";
 import Person from "../../components/assets/person.png";
 import projectImg1 from "../../components/assets/proImg1.jpg";
 import phanee from "../../../src/components/assets/phanee.png";
+import jsicon from "../../../src/components/assets/jsicon.png";
+import cssicon from "../../../src/components/assets/cssicon.jpeg";
+import reactlogo from "../../../src/components/assets/reactlogo.png";
+import htmlicon from "../../../src/components/assets/htmlicon.png";
+import nodejsicon from "../../../src/components/assets/nodejsicon.png";
+import muiicon from "../../../src/components/assets/muiicon.png";
+import giticon from "../../../src/components/assets/giticon.png";
+import githubicon from "../../../src/components/assets/githubicon.png";
+import formikicon from "../../../src/components/assets/formikicon.png";
+import yupicon from "../../../src/components/assets/yupicon.png";
+import reduxtoolkit from "../../../src/components/assets/reduxtoolkiticon.png";
+import typescripticon from "../../../src/components/assets/typescripticon.png";
+import axiosicon from "../../../src/components/assets/axiosicon.png";
+import bitbucketicon from "../../../src/components/assets/bitbucketicon.jpeg";
 import ghiImage from "../../components/assets/Screenshot 2023-12-06 133628.png";
 import sicImage from "../../components/assets/Screenshot 2023-12-06 134329.png";
 import wellFundImage from "../../components/assets/Screenshot 2023-12-06 134910.png";
@@ -93,4 +107,18 @@ export const assets = {
   javascript,
   nodejs,
   phanee,
+  jsicon,
+  reactlogo,
+  htmlicon,
+  nodejsicon,
+  muiicon,
+  giticon,
+  githubicon,
+  formikicon,
+  yupicon,
+  reduxtoolkit,
+  typescripticon,
+  cssicon,
+  bitbucketicon,
+  axiosicon,
 };
