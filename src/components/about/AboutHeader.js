@@ -6,7 +6,7 @@ function AboutHeader() {
     <>
       <Grid className="container-about">
         <Box className="card-headings">
-          <h5>Phaneendra_Reddy_Goluguri</h5>
+          <h5>Phaneendra Reddy Goluguri</h5>
           <p>Frontend Developer ❤️| javaScript 💛| React 💙</p>
         </Box>
       </Grid>

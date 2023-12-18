@@ -23,7 +23,7 @@ export const constants = {
 
   Nav_Info: () => {
     return {
-      NAME: "Phaneendra_Reddy_Goluguri",
+      NAME: "Phaneendra Reddy Goluguri",
       PORTFOLIO: "Portfolio",
       LOGO_TYPE: "LogoB",
       HOME: "Home",
@@ -45,7 +45,7 @@ change some basics to make Footer Design responsive. First I gave`,
       HEADER: "overview",
       ABOUT: "about",
       OPEN_TO_WORK: "Open To Work",
-      ABOUT_INFO: `•	2.1 years of work experience as a React JS (JavaScript library) Web Developer. 
+      ABOUT_INFO: `•	2.2 years of work experience as a React JS (JavaScript library) Web Developer. 
       •	Developed reusable components using the React JS library for the user interface.
       •	Exposed to working with the latest react hooks functional programming.
       •	Strong hands-on experience with Forms, and data tables.
@@ -749,22 +749,22 @@ change some basics to make Footer Design responsive. First I gave`,
       ABOUT_DESCRIPTION_CARD: [
         {
           icon: AboutExpIcon,
-          role: "Phaneendra_Reddy_Goluguria Institute of Engineering And Technology.",
-          place: "cheyyeru.",
-          jobDescription: "B-Tech, Mechanical.",
+          role: "Sri Vasavi Engineering College",
+          place: "Tadepalligudem",
+          jobDescription: "B-Tech,E.C.E",
           jobDuration: "2016 - 2020",
         },
         {
           icon: AboutExpIcon,
-          role: "Aditya Juniour Colleage.",
-          place: "Amalapuram.",
-          jobDescription: "MPC",
+          role: "Pragathi Juniour Colleage.",
+          place: "Tanuku.",
+          jobDescription: "M.P.C",
           jobDuration: "2014 - 2016",
         },
         {
           icon: AboutExpIcon,
-          role: "Z.P Hign School.",
-          place: "Kodurupadu.",
+          role: "Bhashyam Public School.",
+          place: "Tanuku.",
           jobDescription: "-",
           jobDuration: "2013 - 2014",
         },

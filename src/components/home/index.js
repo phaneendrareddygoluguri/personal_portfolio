@@ -90,7 +90,7 @@ function HomeIndex() {
         <Grid container>
           <Grid item xs={12} md={6} className={"homeMainContainer"}>
             <h3>
-              Hello, it's Me I'm Phaneendra_Reddy_Goluguri And I'm a Frontend
+              Hello, it's Me I'm Phaneendra Reddy Goluguri And I'm a Frontend
               Developer{" "}
             </h3>
             <p>
@@ -145,7 +145,7 @@ function HomeIndex() {
           >
             <a
               className="actionButton"
-              href="mailto:Phaneendra_Reddy_Golugurikondapalli801@gmail.com"
+              href="mailto:phaneendrareddygoluguri@gmail.com"
             >
               Get in Touch
             </a>

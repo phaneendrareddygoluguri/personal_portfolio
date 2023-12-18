@@ -32,7 +32,7 @@ const Experience = () => {
               >
                 <a
                   className="actionButton"
-                  href="mailto:Phaneendra_Reddy_Golugurikondapalli801@gmail.com"
+                  href="mailto:phaneendrareddygoluguri@gmail.com"
                 >
                   Get in Touch
                 </a>
