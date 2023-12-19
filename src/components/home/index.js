@@ -320,33 +320,39 @@ function HomeIndex() {
         <Grid container className="skillsContainer">
           <h1>Skills</h1>
           <Grid container className="donut">
-            <Grid item xs={12} md={6} className="donut-chart">
+            <Grid item xs={4} className="donut-chart">
               <ReactECharts option={DONUT_OPTIONS} />
             </Grid>
-            <Grid item xs={12} md={6} className="donut-names" pl={4}>
-              {skills?.map((each) => {
-                return (
-                  <div className="skillsNameContainer">
-                    <Box>
-                      <span>
-                        {" "}
-                        <img
-                          src={each?.icon}
-                          alt={each?.language}
-                          width={30}
-                          style={{ borderRadius: "25px" }}
-                        />
-                      </span>
-                      <span>
-                        <div className="infoTextExpContent">
-                          <h4>{each?.language}</h4>
-                          <p>{each?.experience}</p>
+            <Grid item xs={8} className="donut-names" pl={4}>
+              <Grid container>
+                {skills?.map((each) => {
+                  return (
+                    <Grid item xs={4} className="courseCard">
+                      <img
+                        src={each?.icon}
+                        alt={each?.language}
+                        style={{
+                          height: "50px",
+                          width: "50px",
+                          borderRadius: "25px",
+                        }}
+                      />
+                      <div>
+                        <p className="courseDataText">{each?.language}</p>
+                        <div
+                          className="courseDataContainer"
+                          style={{
+                            color: "#117B34FF",
+                            background: " #EEFDF3FF",
+                          }}
+                        >
+                          <b>{each?.experience}</b>
                         </div>
-                      </span>
-                    </Box>
-                  </div>
-                );
-              })}
+                      </div>
+                    </Grid>
+                  );
+                })}
+              </Grid>
             </Grid>
           </Grid>
         </Grid>

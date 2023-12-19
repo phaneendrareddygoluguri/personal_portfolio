@@ -717,19 +717,55 @@ change some basics to make Footer Design responsive. First I gave`,
 
             data: [
               {
-                name: "javaScript",
+                name: "JavaScript",
                 value: 600,
               },
               {
-                name: "HTML5",
-                value: 500,
+                name: "HTML",
+                value: 600,
               },
               {
                 name: "ReactJS",
                 value: 600,
               },
               {
-                name: "CSS3",
+                name: "CSS",
+                value: 600,
+              },
+              {
+                name: "Redux Toolkit",
+                value: 600,
+              },
+              {
+                name: "Git",
+                value: 600,
+              },
+              {
+                name: "GitHub",
+                value: 600,
+              },
+              {
+                name: "TypeScript",
+                value: 600,
+              },
+              {
+                name: "Formik",
+                value: 600,
+              },
+              {
+                name: "Yup",
+                value: 600,
+              },
+              {
+                name: "Axios",
+                value: 600,
+              },
+              {
+                name: "BitBucket",
+                value: 600,
+              },
+              {
+                name: "Material-UI",
                 value: 600,
               },
               {
