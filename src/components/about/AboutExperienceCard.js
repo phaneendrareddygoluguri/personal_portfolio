@@ -4,13 +4,10 @@ import Edu1 from "../assets/edu1.png";
 // import Edu3 from "../assets/edu3.png";
 const AboutExperienceCard = ({ listOfExperiences }) => {
   const React = document.React;
-  const { Grid } = React.Imports(
-    ({ materialUI }) => materialUI
-  );
+  const { Grid } = React.Imports(({ materialUI }) => materialUI);
   // const { BookmarkBorderIcon, HomeIcon, CalendarMonthIcon } = React.Imports(
   //   ({ icons }) => icons
   // );
-  // const { AboutExpIcon } = React.Imports(({ assets }) => assets);
   const { AboutExpCard } = React.Imports(({ constants }) => constants);
   const { ABOUT_DESCRIPTION_CARD } = AboutExpCard();
   return (
@@ -23,15 +20,14 @@ const AboutExperienceCard = ({ listOfExperiences }) => {
         {ABOUT_DESCRIPTION_CARD?.map((each, index) => {
           return (
             <div className="educationCardContainer">
-              <div className="textInfo">
+              <div className="ImageInfo">
+                <img src={each?.icon} alt={"edu1"} width={"60px"} />
+                <p>{each.jobDuration}</p>
+              </div>
+              <div>
                 <p>{each.role}</p>
                 <p>{each.place}</p>
-
                 <p>{each.jobDescription}</p>
-              </div>
-              <div className="ImageInfo">
-                <img src={Edu1} alt={"edu1"} width={"60px"} />
-                <p>{each.jobDuration}</p>
               </div>
             </div>
           );

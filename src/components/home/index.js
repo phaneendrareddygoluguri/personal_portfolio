@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 function HomeIndex() {
   const { Grid, Card, CardContent, CardMedia, Box } = React.Imports(
     ({ materialUI }) => materialUI
   );
+  const [quote, setQuote] = useState();
+  function getRandomNumber(min, max) {
+    const randomDecimal = Math.random();
+    const randomInRange = randomDecimal * (max - min + 1) + min;
+    const randomInteger = Math.floor(randomInRange);
+    return randomInteger;
+  }
+
+  useEffect(() => {
+    axios.get("https://api.quotable.io/quotes?tags=technology").then((res) => {
+      const randomNumber = getRandomNumber(0, res?.data?.count);
+      setQuote(res?.data?.results[randomNumber]?.content);
+    });
+  }, []);
   const {
     Image6,
     Image8,
     Image9,
     projectImg1,
     phanee,
+    aboutImage,
     jsicon,
     reactlogo,
     htmlicon,
@@ -152,9 +168,8 @@ function HomeIndex() {
               Hello,I'm Phaneendra Reddy Goluguri And I'm a Front-End Developer{" "}
             </h3>
             <p>
-              I'm a Front-End Developer with extensive experince for over 2
-              years. Expertise is to create and web design,Frontend design and
-              many more....
+              {` I'm a Front-End Developer with extensive experince for over ${yearsAndMonthsCompleted()} . Expertise is to create and web design,Frontend design and
+              many more....`}
             </p>
           </Grid>
           <Grid
@@ -311,7 +326,7 @@ function HomeIndex() {
               </div>
             </div> */}
             <div className="aboutImageContent">
-              <img src={Image9} alt="Image9" className="aboutUSImage" />
+              <img src={aboutImage} alt="Image9" className="aboutUSImage" />
               {/* <img src={Image6} alt="projects" className="ProjectsStamp" /> */}
               {/* <img src={Image4} alt="girlImage" className="profileImage" /> */}
             </div>
@@ -387,7 +402,11 @@ function HomeIndex() {
           </div>
         </Grid>
         <Grid container className="testimonals">
-          <p>"First, solve the problem. Then write the code💡🤌🧠 "</p>
+          <p>
+            {quote && quote?.length > 0
+              ? quote
+              : "First, solve the problem. Then write the code💡🤌🧠 "}
+          </p>
         </Grid>
       </Grid>
     </div>

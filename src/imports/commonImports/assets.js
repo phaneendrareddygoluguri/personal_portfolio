@@ -32,6 +32,7 @@ import Mic from "../../components/assets/mic.png";
 import Person from "../../components/assets/person.png";
 import projectImg1 from "../../components/assets/proImg1.jpg";
 import phanee from "../../../src/components/assets/phanee.png";
+import aboutImage from "../../../src/components/assets/aboutImage.png";
 import jsicon from "../../../src/components/assets/jsicon.png";
 import cssicon from "../../../src/components/assets/cssicon.jpeg";
 import reactlogo from "../../../src/components/assets/reactlogo.png";
@@ -59,16 +60,21 @@ import frontend from "../../components/assets/images.jpeg";
 import fullstack from "../../components/assets/fullstack.jpeg";
 import javascript from "../../components/assets/download.png";
 import nodejs from "../../components/assets/nodejs.png";
+import bhashyam from "../../components/assets/bhashyampublicschool.png";
+import vasavi from "../../components/assets/vasavi.png";
+import pragathi from "../../components/assets/pragathi.png";
 export const assets = {
   Logo,
   Doller,
   Idcard,
   Pepole,
+  vasavi,
+  pragathi,
   Textcard,
   Image9,
   Image4,
   Image8,
-
+  bhashyam,
   Image6,
   Image7,
   Image10,
@@ -107,6 +113,7 @@ export const assets = {
   javascript,
   nodejs,
   phanee,
+  aboutImage,
   jsicon,
   reactlogo,
   htmlicon,

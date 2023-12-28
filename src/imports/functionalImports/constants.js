@@ -780,25 +780,27 @@ change some basics to make Footer Design responsive. First I gave`,
   },
 
   AboutExpCard: () => {
-    const { AboutExpIcon } = React.Imports(({ assets }) => assets);
+    const { vasavi, pragathi, bhashyam } = React.Imports(
+      ({ assets }) => assets
+    );
     return {
       ABOUT_DESCRIPTION_CARD: [
         {
-          icon: AboutExpIcon,
+          icon: vasavi,
           role: "Sri Vasavi Engineering College",
           place: "Tadepalligudem",
           jobDescription: "B-Tech,E.C.E",
           jobDuration: "2016 - 2020",
         },
         {
-          icon: AboutExpIcon,
+          icon: pragathi,
           role: "Pragathi Juniour Colleage.",
           place: "Tanuku.",
           jobDescription: "M.P.C",
           jobDuration: "2014 - 2016",
         },
         {
-          icon: AboutExpIcon,
+          icon: bhashyam,
           role: "Bhashyam Public School.",
           place: "Tanuku.",
           jobDescription: "-",
