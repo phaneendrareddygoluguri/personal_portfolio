@@ -87,25 +87,27 @@ function HomeIndex() {
 
   const skills = [
     {
-      language: "JavaScript",
-      experience: yearsAndMonthsCompleted(),
-      icon: jsicon,
-    },
-    {
       language: "HTML",
       experience: yearsAndMonthsCompleted(),
       icon: htmlicon,
-    },
-    {
-      language: "ReactJS",
-      experience: yearsAndMonthsCompleted(),
-      icon: reactlogo,
     },
     {
       language: "CSS",
       experience: yearsAndMonthsCompleted(),
       icon: cssicon,
     },
+    {
+      language: "JavaScript",
+      experience: yearsAndMonthsCompleted(),
+      icon: jsicon,
+    },
+
+    {
+      language: "ReactJS",
+      experience: yearsAndMonthsCompleted(),
+      icon: reactlogo,
+    },
+
     {
       language: "Redux Toolkit",
       experience: yearsAndMonthsCompleted(),
@@ -127,6 +129,11 @@ function HomeIndex() {
       icon: typescripticon,
     },
     {
+      language: "Material-UI",
+      experience: yearsAndMonthsCompleted(),
+      icon: muiicon,
+    },
+    {
       language: "Formik",
       experience: yearsAndMonthsCompleted(),
       icon: formikicon,
@@ -146,11 +153,7 @@ function HomeIndex() {
       experience: yearsAndMonthsCompleted(),
       icon: bitbucketicon,
     },
-    {
-      language: "Material-UI",
-      experience: yearsAndMonthsCompleted(),
-      icon: muiicon,
-    },
+
     {
       language: "Node.JS",
       experience: "0.6YR",

@@ -41,11 +41,12 @@ change some basics to make Footer Design responsive. First I gave`,
   },
 
   SkillsInfo: () => {
+    const { yearsAndMonthsCompleted } = React.Imports(({ utils }) => utils);
     return {
       HEADER: "overview",
       ABOUT: "about",
       OPEN_TO_WORK: "Open To Work",
-      ABOUT_INFO: `•	2.2 years of work experience as a React JS (JavaScript library) Web Developer. 
+      ABOUT_INFO: `•	${yearsAndMonthsCompleted()} of work experience as a React JS (JavaScript library) Web Developer. 
       •	Developed reusable components using the React JS library for the user interface.
       •	Exposed to working with the latest react hooks functional programming.
       •	Strong hands-on experience with Forms, and data tables.
@@ -1075,7 +1076,7 @@ change some basics to make Footer Design responsive. First I gave`,
           },
         },
         {
-          ProjectName: "Galaxy",
+          ProjectName: "PDS Galaxy",
           Role: "ReactJS Developer",
           About:
             "PDS Galaxy provides end-to-end services for the Health sector.Managing various services like Insurance Billing and follow-up, Early Out and patient Access, Bad Debt and collections, Accident Claims and workers' Compensation, and State and federal Health care Enrolment Assistance.",
@@ -1095,21 +1096,21 @@ change some basics to make Footer Design responsive. First I gave`,
           },
         },
         {
-          ProjectName: "SIC",
+          ProjectName: "Campaign Manager",
           Role: "ReactJS Developer",
           About:
-            "PDS-SIC is an Integrated Web solution for Secure Email.Sendit Certified is a Secure way of communication between individuals or businesses. It helps any individual or enterprise to communicate between them in a secure way which is different from any other email communication.",
+            "Campaign Manager is provides campaign services.●	Campaign Manager Managing various services like Creating the templates which is used to communicate with clients",
           Image: sicImage,
           ImageStatus: "notOwned",
           RolesAndResponsiblities: {
             pointOne:
-              "Design, develop and test HTML5, CSS3, Bootstrap, Java Script and React.JS that meets accessibility and web browser standards for website.",
+              "Worked on Developing a web application to view the following modules: Campaign Maintenance, Template maintenance.",
             pointTwo:
-              "Worked on Sharing Files through using Decode and Encode routing.",
+              "Integrated REST APIs as per the requirement. Used Redux tool kit and context for maintaining global state of the application",
             pointThree:
-              "	Used React-Router to turn application into Single Page Application",
+              "Integrated User defined forms using reusable React components",
             pointFour:
-              "Worked in using React JS components, Forms, Events, Keys, Router and Redux concept.",
+              "Integrated dynamic form where user can provide the form fields and validations",
             pointFive:
               "Used the Restful web service calls for POST, PUT, DELETE and GET methods.",
           },
@@ -1155,17 +1156,27 @@ change some basics to make Footer Design responsive. First I gave`,
           },
         },
       ],
-      PlugInStore: {
+      PLUGIN_STORE: {
         PluginNames: [
+          {
+            name: "Material UI",
+            PluginDescs:
+              " Material UI is an open-source React component library that implements Google's Material Design. It includes a comprehensive collection of prebuilt components that are ready for use in production right out of the box. Material UI is beautiful by design and features a suite of customization options that make it easy to implement your own custom design system on top of our components.",
+          },
           {
             name: "Formik",
             PluginDescs:
               " forms are really verbose in React. To make matters worse, most form helpers do wayyyy too much magic and often have a significant performance cost associated with them. Formik is a small library that helps you with the 3 most annoying parts:Getting values in and out of form state,Validation and error messages,Handling form submission,By colocating all of the above in one place, Formik will keep things organized--making testing, refactoring, and reasoning about your forms a breeze",
           },
           {
-            name: "Material UI",
+            name: "Yup",
             PluginDescs:
-              " Material UI is an open-source React component library that implements Google's Material Design. It includes a comprehensive collection of prebuilt components that are ready for use in production right out of the box. Material UI is beautiful by design and features a suite of customization options that make it easy to implement your own custom design system on top of our components.",
+              "Yup is a lightweight JavaScript library for object schema validation. With a declarative syntax, it enables developers to define validation rules for data objects. Key features include built-in and custom validation, asynchronous validation support, customizable error messages, and seamless integration with popular form libraries. Designed with an immutable API, Yup ensures data integrity during validation.",
+          },
+          {
+            name: "Axios",
+            PluginDescs:
+              "Axios is a popular, promise-based HTTP client for the browser and Node.js. It simplifies the process of making HTTP requests and handling responses. Axios supports features like automatic transformation of JSON data, request and response interception, and the ability to cancel requests. Its straightforward API and support for promises make it a preferred choice for AJAX requests and communication with APIs.",
           },
           {
             name: "Redux And ReduxToolkit",

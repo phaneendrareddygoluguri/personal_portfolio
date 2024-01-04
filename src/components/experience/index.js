@@ -85,7 +85,7 @@ const Experience = () => {
         </Grid>
       </Grid>
 
-      <Grid container>
+      {/* <Grid container>
         <Grid item xs={12} md={5} className="aboutInfoContainer">
           <Box className={"expDatContentInfo"}>
             <img src={Work} alt="img" width={250} />
@@ -103,24 +103,24 @@ const Experience = () => {
               <p>React Developer</p>
             </div>
           </Box>
-          {/* <p className="descriptionExpInfo">
+          <p className="descriptionExpInfo">
             What is experience design examples? Digital Experience Design In
             digital product design, the experience will include physical and
             digital experiences and often considers how these intersect. For
             example, a food delivery app will analyze how someone at work might
             order lunch: What are they doing before picking up their phone?
-          </p> */}
+          </p>
           <p className="descriptionExpInfo">
-            {/* What is experience design examples? Digital Experience Design In
+            What is experience design examples? Digital Experience Design In
             digital product design, the experience will include physical and
-            digital experiences and often considers how these intersect. For */}
+            digital experiences and often considers how these intersect. For
             example, a food delivery app will analyze how someone at work might
             order lunch: What are they doing before picking up their phone?
           </p>
         </Grid>
-      </Grid>
+      </Grid> */}
 
-      <Grid container>
+      {/* <Grid container>
         <Grid item xs={12} md={5} className="aboutInfoContainer">
           <Box className={"expDatContentInfo"}>
             <img src={Work} alt="img" width={250} />
@@ -141,19 +141,19 @@ const Experience = () => {
           <p className="descriptionExpInfo">
             What is experience design examples? Digital Experience Design In
             digital product design, the experience will include physical and
-            {/* digital experiences and often considers how these intersect. For
+            digital experiences and often considers how these intersect. For
             example, a food delivery app will analyze how someone at work might
-            order lunch: What are they doing before picking up their phone? */}
+            order lunch: What are they doing before picking up their phone?
           </p>
-          {/* <p className="descriptionExpInfo">
+          <p className="descriptionExpInfo">
             What is experience design examples? Digital Experience Design In
             digital product design, the experience will include physical and
             digital experiences and often considers how these intersect. For
             example, a food delivery app will analyze how someone at work might
             order lunch: What are they doing before picking up their phone?
-          </p> */}
+          </p>
         </Grid>
-      </Grid>
+      </Grid> */}
     </>
   );
 };
