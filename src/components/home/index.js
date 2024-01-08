@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 function HomeIndex() {
-  const { Grid, Card, CardContent, CardMedia, Box } = React.Imports(
+  const { Grid, Card, CardContent, CardMedia } = React.Imports(
     ({ materialUI }) => materialUI
   );
   const [quote, setQuote] = useState();
@@ -22,7 +22,6 @@ function HomeIndex() {
   const {
     Image6,
     Image8,
-    Image9,
     projectImg1,
     phanee,
     aboutImage,

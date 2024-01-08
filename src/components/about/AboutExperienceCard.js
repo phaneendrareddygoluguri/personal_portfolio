@@ -1,5 +1,4 @@
 import Education from "../assets/education.svg";
-import Edu1 from "../assets/edu1.png";
 // import Edu2 from "../assets/edu2.png";
 // import Edu3 from "../assets/edu3.png";
 const AboutExperienceCard = ({ listOfExperiences }) => {
